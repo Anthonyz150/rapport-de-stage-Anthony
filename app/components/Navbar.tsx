@@ -19,9 +19,9 @@ export default function Navbar() {
           {/* LIENS VERSION ORDINATEUR (Cachés sur mobile) */}
           <div className="hidden md:flex gap-8 text-sm font-bold text-[#0056A4]">
             <Link href="/" className="hover:opacity-70 transition-opacity">Accueil</Link>
+            <Link href="/a-propos" className="hover:opacity-70 transition-opacity">À propos</Link>
             <Link href="/rapport" className="hover:opacity-70 transition-opacity">Rapport</Link>
             <Link href="/remerciements" className="hover:opacity-70 transition-opacity">Remerciements</Link>
-            <Link href="/a-propos" className="hover:opacity-70 transition-opacity">À propos</Link>
           </div>
 
           {/* BOUTON BURGER (Visible UNIQUEMENT sur mobile) */}
