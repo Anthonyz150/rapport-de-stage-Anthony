@@ -65,14 +65,14 @@ export default function Navbar() {
             <Link href="/" onClick={() => setIsOpen(false)} className="font-bold text-[#0056A4] border-b border-[#0056A4]/5 pb-2">
               Accueil
             </Link>
+            <Link href="/a-propos" onClick={() => setIsOpen(false)} className="font-bold text-[#0056A4] border-b border-[#0056A4]/5 pb-2">
+              À propos
+            </Link>
             <Link href="/rapport" onClick={() => setIsOpen(false)} className="font-bold text-[#0056A4] border-b border-[#0056A4]/5 pb-2">
               Rapport
             </Link>
             <Link href="/remerciements" onClick={() => setIsOpen(false)} className="font-bold text-[#0056A4] border-b border-[#0056A4]/5 pb-2">
               Remerciements
-            </Link>
-            <Link href="/a-propos" onClick={() => setIsOpen(false)} className="font-bold text-[#0056A4] border-b border-[#0056A4]/5 pb-2">
-              À propos
             </Link>
           </div>
 
