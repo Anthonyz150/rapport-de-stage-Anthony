@@ -20,7 +20,7 @@ export default function HomePage() {
             
             <header className="mb-10">
               <span className="inline-block px-4 py-1.5 rounded-full bg-[#0056A4]/10 text-[#0056A4] text-xs font-bold uppercase tracking-[0.2em] mb-6">
-                Session Février 2026
+                Stage d'observation - 2026
               </span>
               <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-[#0056A4] leading-tight">
                 Rapport de <br className="hidden sm:block" /> Stage de 3<sup>ème</sup>
@@ -31,7 +31,7 @@ export default function HomePage() {
             <div className="space-y-8 text-lg leading-relaxed text-[#0056A4]/90 mb-12">
               {/* Texte justifié pour un rendu "édition" */}
               <p className="text-justify sm:text-center text-balance">
-                Bienvenue sur ce portail numérique dédié à mon immersion professionnelle. 
+                Bienvenue sur ce portail numérique dédié à mon stage en entreprise. 
                 J'ai eu le privilège de découvrir les coulisses de l'ingénierie logicielle chez 
                 <strong className="text-[#0056A4]"> Avisto</strong>, une expérience qui a consolidé ma passion pour les nouvelles technologies.
               </p>
