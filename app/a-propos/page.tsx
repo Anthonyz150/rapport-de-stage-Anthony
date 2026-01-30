@@ -10,7 +10,7 @@ export default function AproposPage() {
       />
 
       {/* 2. Contenu principal : Centrage TOTAL */}
-      <main className="relative z-10 flex min-h-screen w-full flex-col">
+      <main className="relative z-10 flex w-full max-w-3xl items-center justify-center py-10 px-4 sm:px-8">
         
         {/* Espaceur pour la Navbar */}
         <div className="h-20 w-full flex-shrink-0" />
