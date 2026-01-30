@@ -4,15 +4,8 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen items-center justify-center font-sans overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[url('/Logo%20Advans.jpg')] bg-cover md:bg-contain bg-center blur-sm opacity-90" />
-      {/* 2. Structure de centrage TOTAL */}
-      <main className="relative z-10 flex min-h-screen w-full flex-col">
-
-        {/* Espaceur pour la Navbar (Hauteur fixe) */}
-        <div className="h-20 w-full flex-shrink-0" />
-
-        {/* Conteneur de centrage horizontal et vertical */}
-        <div className="flex flex-1 w-full items-center justify-center p-4 sm:p-8">        <div className="w-full rounded-2xl bg-white/90 p-5 sm:p-10 shadow-xl backdrop-blur-sm border border-[#0056A4]/20">
-
+      <main className="relative z-10 flex w-full max-w-3xl items-center justify-center py-10 px-4 sm:px-8">
+        <div className="w-full rounded-2xl bg-white/90 p-5 sm:p-10 shadow-xl backdrop-blur-sm border border-[#0056A4]/20">
           {/* En-tête / contexte */}
           <header className="flex w-full flex-col items-center gap-3 text-center">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#0056A4]/80">
@@ -68,7 +61,7 @@ export default function Home() {
               <span className="absolute inset-0 rounded-full bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
             </Link>
           </div>
-        </div>
+
         </div>
       </main>
     </div>
