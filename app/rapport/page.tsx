@@ -10,7 +10,7 @@ export default function RapportPage() {
             />
 
             {/* 2. Le contenu de la page : pt-24 assure l'espace sous la Navbar */}
-            <main className="relative z-10 flex flex-col items-center p-4 sm:p-8 pt-28">
+            <main className="relative z-10 flex w-full max-w-3xl items-center justify-center py-10 px-4 sm:px-8">
                 <div className="w-full max-w-3xl rounded-2xl bg-white/95 p-8 sm:p-12 shadow-2xl backdrop-blur-md border border-[#0056A4]/20 mt-10">
                     <h1 className="text-3xl font-bold text-[#0056A4] mb-6 text-center">
                         Consulter le Rapport
