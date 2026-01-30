@@ -23,7 +23,7 @@ export default function HomePage() {
                 Stage d'observation - 2026
               </span>
               <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-[#0056A4] leading-tight">
-                Rapport de <br className="hidden sm:block" /> Stage de 3<sup>ème</sup>
+                Rapport de <br className="hidden sm:block" /> Stage de 3ème
               </h1>
               <p className="mt-4 text-xl text-[#0056A4]/70 font-medium italic">Entreprise Avisto Telecom</p>
             </header>
