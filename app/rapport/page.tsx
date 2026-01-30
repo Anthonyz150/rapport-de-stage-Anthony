@@ -9,14 +9,14 @@ export default function RapportPage() {
                 aria-hidden="true"
             />
 
-            {/* 2. Le contenu de la page */}
-            <main className="relative z-10 flex flex-col items-center py-24 px-4 sm:px-8">
-                <div className="w-full max-w-5xl rounded-2xl bg-white/80 p-6 shadow-2xl backdrop-blur-md border border-[#0056A4]/20">
+            {/* 2. Le contenu de la page : pt-24 assure l'espace sous la Navbar */}
+            <main className="relative z-10 flex flex-col items-center pt-24 pb-12 px-4 sm:px-8">
+                <div className="w-full max-w-5xl rounded-2xl bg-white/90 p-6 shadow-2xl backdrop-blur-md border border-[#0056A4]/20">
                     <h1 className="text-3xl font-bold text-[#0056A4] mb-6 text-center">
                         Consulter le Rapport
                     </h1>
 
-                    {/* --- AJOUT DES BOUTONS D'ACTION ICI --- */}
+                    {/* --- BOUTONS D'ACTION --- */}
                     <div className="mb-6 flex flex-wrap justify-center gap-4">
                         <a
                             href="/Rapport_de_stage.pdf"
@@ -35,10 +35,9 @@ export default function RapportPage() {
                             <span>📥</span> Télécharger
                         </a>
                     </div>
-                    {/* --------------------------------------- */}
 
-                    {/* Ta visionneuse PDF */}
-                    <div className="h-[550px] w-full rounded-xl border border-[#0056A4]/10 overflow-hidden bg-white shadow-lg">
+                    {/* Visionneuse PDF - Adaptée pour mobile et desktop */}
+                    <div className="h-[400px] sm:h-[600px] w-full rounded-xl border border-[#0056A4]/10 overflow-hidden bg-white shadow-lg">
                         <iframe
                             src="/Rapport_de_stage.pdf#toolbar=0&view=FitH"
                             className="h-full w-full"
@@ -46,23 +45,19 @@ export default function RapportPage() {
                         />
                     </div>
 
-                    {/* Bouton de navigation discret */}
+                    {/* Bouton de navigation vers Remerciements */}
                     <div className="mt-10 flex justify-center border-t border-[#0056A4]/10 pt-6">
                         <Link
                             href="/remerciements"
                             className="group relative flex items-center gap-2 rounded-full bg-[#0056A4] px-8 py-3 text-sm font-bold text-white 
-               transition-all duration-300 ease-out 
-               hover:bg-[#004488] hover:shadow-[0_10px_20px_rgba(0,86,164,0.3)] 
-               hover:-translate-y-1 active:scale-95"
+                               transition-all duration-300 ease-out 
+                               hover:bg-[#004488] hover:shadow-[0_10px_20px_rgba(0,86,164,0.3)] 
+                               hover:-translate-y-1 active:scale-95"
                         >
                             <span>Remerciements</span>
-
-                            {/* La flèche animée avec transition-transform */}
                             <span className="transition-transform duration-300 ease-in-out group-hover:translate-x-2">
                                 →
                             </span>
-
-                            {/* Optionnel : Un petit reflet brillant qui passe au survol */}
                             <span className="absolute inset-0 rounded-full bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
                         </Link>
                     </div>

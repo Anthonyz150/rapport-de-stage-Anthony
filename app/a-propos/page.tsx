@@ -3,14 +3,14 @@ import Link from 'next/link';
 export default function AproposPage() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden font-sans">
-      {/* 1. L'image de fond fixe et floutée (Identité visuelle du site) */}
+      {/* 1. L'image de fond fixe et floutée */}
       <div
         className="pointer-events-none fixed inset-0 z-0 bg-[url('/Logo%20Advans.jpg')] bg-contain bg-center opacity-90 blur-md"
         aria-hidden="true"
       />
 
-      {/* 2. Contenu principal centré dans la boîte vitrée */}
-      <main className="relative z-10 flex min-h-screen items-center justify-center p-4 sm:p-8">
+      {/* 2. Contenu principal : pt-24 ajouté pour ne pas être caché par la Navbar */}
+      <main className="relative z-10 flex flex-col items-center pt-24 pb-12 p-4 sm:p-8">
         <div className="w-full max-w-3xl rounded-2xl bg-white/90 p-8 sm:p-12 shadow-2xl backdrop-blur-md border border-[#0056A4]/20">
 
           <header className="mb-8 border-b border-[#0056A4]/10 pb-6 text-center">
@@ -52,13 +52,9 @@ export default function AproposPage() {
                hover:-translate-y-1 active:scale-95"
             >
               <span>Consulter le rapport</span>
-
-              {/* La flèche animée avec transition-transform */}
               <span className="transition-transform duration-300 ease-in-out group-hover:translate-x-2">
                 →
               </span>
-
-              {/* Optionnel : Un petit reflet brillant qui passe au survol */}
               <span className="absolute inset-0 rounded-full bg-white/10 opacity-0 transition-opacity group-hover:opacity-100" />
             </Link>
           </div>
