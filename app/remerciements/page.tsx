@@ -30,7 +30,7 @@ export default function RemerciementsPage() {
             <div className="space-y-6 text-lg leading-relaxed text-[#0056A4]/90">
               <p>
                 Je remercie toute l&apos;équipe d&apos;<strong>Avisto</strong> pour son accueil chaleureux, en
-                particulier mon tuteur de stage, (<strong>Richard TOURNOIS</strong>), ainsi que l'ensemble des collaborateurs (<strong>Yvann PONCE, Arnaud DUMANOIS et Logan LAMOUAR</strong>) qui ont
+                particulier mon tuteur de stage, (<strong>Richard TOURNOIS</strong>), ainsi que l'ensemble des collaborateurs (<strong>Eric SALENC, Yvann PONCE, Arnaud DUMANOIS et Logan LAMOUAR</strong>) qui ont
                 pris le temps de me présenter leur métier et de partager leur passion.
               </p>
 
