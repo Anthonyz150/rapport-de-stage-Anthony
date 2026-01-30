@@ -44,7 +44,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[10px] font-bold uppercase text-[#0056A4]/50 tracking-wider">Tuteur de stage</span>
-                  <p className="font-semibold">Richard Tournois</p>
+                  <p className="font-semibold">Richard TOURNOIS</p>
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[10px] font-bold uppercase text-[#0056A4]/50 tracking-wider">Établissement</span>
@@ -52,7 +52,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-[10px] font-bold uppercase text-[#0056A4]/50 tracking-wider">Période</span>
-                  <p className="font-semibold">Janvier 2026</p>
+                  <p className="font-semibold">Du 26/01/2026 au 30/01/2026</p>
                 </div>
               </div>
             </div>
