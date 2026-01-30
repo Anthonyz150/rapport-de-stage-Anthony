@@ -18,19 +18,22 @@ export default function RapportPage() {
 
                     {/* --- BOUTONS D'ACTION --- */}
                     <div className="mb-6 flex flex-wrap justify-center gap-4">
+                        {/* BOUTON PLEINE PAGE (Ouvrir) */}
                         <a
                             href="/Rapport_de_stage.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 rounded-full border-2 border-[#0056A4] px-5 py-2 text-sm font-semibold text-[#0056A4] transition hover:bg-[#0056A4] hover:text-white"
                         >
-                            <span>🔍</span> Pleine page
+                            <span>🔍</span> Voir le PDF
                         </a>
 
+                        {/* BOUTON TÉLÉCHARGER (Forcer) */}
                         <a
                             href="/Rapport_de_stage.pdf"
                             download="Rapport_Stage_Anthony.pdf"
-                            className="flex items-center gap-2 rounded-full bg-[#0056A4] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#004488] shadow-md"
+                            target="_self"
+                            className="flex items-center gap-2 rounded-full bg-[#0056A4] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#004488] shadow-md active:scale-95"
                         >
                             <span>📥</span> Télécharger
                         </a>
