@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-end gap-1">
             <div className="flex items-center gap-2">
               <span className="h-px w-8 bg-[#0056A4]/20 hidden md:block"></span>
-              <p className="text-sm font-semibold text-[#0056A4]">Entreprise - Avisto</p>
+              <p className="text-sm font-semibold text-[#0056A4]">Advans Group - Avisto</p>
             </div>
             <p className="text-[11px] text-[#0056A4]/40 font-medium uppercase tracking-tighter">
               © {currentYear} — Tous droits réservés
