@@ -3,23 +3,20 @@ import Link from "next/link";
 export default function RemerciementsPage() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden font-sans">
-      {/* 1. L'image de fond fixe et floutée */}
+      {/* 1. Image de fond fixe */}
       <div
         className="pointer-events-none fixed inset-0 z-0 bg-[url('/Logo%20Advans.jpg')] bg-contain bg-center opacity-90 blur-md"
         aria-hidden="true"
       />
 
-      {/* 2. CORRECTIF DE CENTRAGE : On enlève le max-w du main et on utilise flex-1 */}
       <main className="relative z-10 flex min-h-screen w-full flex-col">
-        
         {/* Espaceur pour la Navbar */}
         <div className="h-20 w-full flex-shrink-0" />
 
-        {/* C'est cette div qui va tout centrer au milieu de l'écran */}
+        {/* Zone de centrage parfaite */}
         <div className="flex flex-1 w-full items-center justify-center p-4 sm:p-8">
           
-          {/* Ton bloc blanc bien centré */}
-          <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white/95 p-8 sm:p-12 shadow-2xl backdrop-blur-md border border-[#0056A4]/20">
+          <div className="mx-auto w-full max-w-3xl rounded-3xl bg-white/95 p-8 sm:p-14 shadow-2xl backdrop-blur-md border border-[#0056A4]/20">
 
             <header className="mb-8 border-b border-[#0056A4]/10 pb-6 text-center">
               <h1 className="text-3xl font-bold tracking-tight text-[#0056A4]">
@@ -27,10 +24,11 @@ export default function RemerciementsPage() {
               </h1>
             </header>
 
-            <div className="space-y-6 text-lg leading-relaxed text-[#0056A4]/90">
+            {/* Ajout de text-justify pour un rendu impeccable */}
+            <div className="space-y-6 text-lg leading-relaxed text-[#0056A4]/90 text-justify">
               <p>
                 Je remercie toute l&apos;équipe d&apos;<strong>Avisto</strong> pour son accueil chaleureux, en
-                particulier mon tuteur de stage, (<strong>Richard TOURNOIS</strong>), ainsi que l'ensemble des collaborateurs (<strong>Eric SALENC, Yvann PONCE, Arnaud DUMANOIS et Logan LAMOUAR</strong>) qui ont
+                particulier mon tuteur de stage, <strong>Richard Tournois</strong>, ainsi que l'ensemble des collaborateurs (<strong>Eric Salenc, Yvann Ponce, Arnaud Dumanois et Logan Lamouar</strong>) qui ont
                 pris le temps de me présenter leur métier et de partager leur passion.
               </p>
 
@@ -52,9 +50,9 @@ export default function RemerciementsPage() {
             <div className="mt-10 flex justify-center border-t border-[#0056A4]/10 pt-6">
               <Link
                 href="/"
-                className="group relative flex items-center gap-2 rounded-full bg-[#0056A4] px-8 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-[#004488] active:scale-95"
+                className="group relative flex items-center gap-2 rounded-full bg-[#0056A4] px-10 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-[#004488] hover:shadow-lg active:scale-95"
               >
-                <span>Accueil</span>
+                <span>Retour à l'accueil</span>
                 <span className="transition-transform duration-300 ease-in-out group-hover:translate-x-2">→</span>
               </Link>
             </div>

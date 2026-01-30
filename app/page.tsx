@@ -3,55 +3,67 @@ import Link from 'next/link';
 export default function HomePage() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden font-sans">
-      {/* 1. Fond fixe (Identité visuelle identique) */}
+      {/* 1. Fond fixe avec logo Advans */}
       <div
         className="pointer-events-none fixed inset-0 z-0 bg-[url('/Logo%20Advans.jpg')] bg-contain bg-center opacity-90 blur-md"
         aria-hidden="true"
       />
 
-      {/* 2. Structure de centrage identique aux autres pages */}
       <main className="relative z-10 flex min-h-screen w-full flex-col">
-        
-        {/* Espaceur pour la Navbar */}
+        {/* Espaceur pour laisser respirer la Navbar */}
         <div className="h-20 w-full flex-shrink-0" />
 
-        {/* Zone de centrage du contenu d'accueil */}
+        {/* Zone de centrage dynamique */}
         <div className="flex flex-1 w-full items-center justify-center p-4 sm:p-8">
           
-          <div className="mx-auto w-full max-w-3xl rounded-2xl bg-white/95 p-8 sm:p-12 shadow-2xl backdrop-blur-md border border-[#0056A4]/20 text-center">
+          <div className="mx-auto w-full max-w-3xl rounded-3xl bg-white/95 p-8 sm:p-14 shadow-2xl backdrop-blur-md border border-[#0056A4]/20 text-center">
             
-            <header className="mb-8">
-              <p className="text-sm font-bold uppercase tracking-widest text-[#0056A4]/60 mb-2">
-                Stage d'observation en entreprise - 3ème
-              </p>
-              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#0056A4]">
-                Mon rapport de stage
+            <header className="mb-10">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-[#0056A4]/10 text-[#0056A4] text-xs font-bold uppercase tracking-[0.2em] mb-6">
+                Session Février 2026
+              </span>
+              <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-[#0056A4] leading-tight">
+                Rapport de <br className="hidden sm:block" /> Stage de 3<sup>ème</sup>
               </h1>
+              <p className="mt-4 text-xl text-[#0056A4]/70 font-medium italic">Entreprise Avisto Telecom</p>
             </header>
 
-            <div className="space-y-6 text-lg leading-relaxed text-[#0056A4]/90 mb-10">
-              <p>
-                Ce site présente mon rapport de stage en entreprise réalisé au sein de la société 
-                <strong> Avisto</strong>. Vous pouvez y consulter mon bilan et découvrir mon expérience.
+            <div className="space-y-8 text-lg leading-relaxed text-[#0056A4]/90 mb-12">
+              {/* Texte justifié pour un rendu "édition" */}
+              <p className="text-justify sm:text-center text-balance">
+                Bienvenue sur ce portail numérique dédié à mon immersion professionnelle. 
+                J'ai eu le privilège de découvrir les coulisses de l'ingénierie logicielle chez 
+                <strong className="text-[#0056A4]"> Avisto</strong>, une expérience qui a consolidé ma passion pour les nouvelles technologies.
               </p>
               
-              {/* Petit bloc d'infos rapides */}
-              <div className="bg-[#0056A4]/5 rounded-xl p-6 text-left border border-[#0056A4]/10">
-                <ul className="space-y-2 text-sm sm:text-base">
-                  <li><strong>Élève :</strong> Anthony DIDIER</li>
-                  <li><strong>Établissement :</strong> Collège André Malraux</li>
-                  <li><strong>Entreprise :</strong> Avisto (Valbonne)</li>
-                </ul>
+              {/* Carte d'identité du stage mieux présentée */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8 bg-[#0056A4]/5 rounded-2xl p-8 text-left border border-[#0056A4]/10 shadow-inner">
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] font-bold uppercase text-[#0056A4]/50 tracking-wider">Stagiaire</span>
+                  <p className="font-semibold">Anthony DIDIER</p>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] font-bold uppercase text-[#0056A4]/50 tracking-wider">Tuteur de stage</span>
+                  <p className="font-semibold">Richard Tournois</p>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] font-bold uppercase text-[#0056A4]/50 tracking-wider">Établissement</span>
+                  <p className="font-semibold">Collège André Malraux</p>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-[10px] font-bold uppercase text-[#0056A4]/50 tracking-wider">Période</span>
+                  <p className="font-semibold">Janvier 2026</p>
+                </div>
               </div>
             </div>
 
-            {/* Bouton d'entrée principal */}
+            {/* Bouton d'action avec micro-animation */}
             <div className="flex justify-center">
               <Link
                 href="/a-propos"
-                className="group relative flex items-center gap-2 rounded-full bg-[#0056A4] px-10 py-4 text-lg font-bold text-white transition-all duration-300 hover:bg-[#004488] hover:shadow-xl active:scale-95"
+                className="group relative flex items-center gap-3 rounded-full bg-[#0056A4] px-12 py-5 text-lg font-bold text-white transition-all duration-300 hover:bg-[#004488] hover:shadow-[0_15px_30px_rgba(0,86,164,0.3)] hover:-translate-y-1 active:scale-95"
               >
-                <span>Découvrir le projet</span>
+                <span>Découvrir mon expérience</span>
                 <span className="transition-transform duration-300 group-hover:translate-x-2">→</span>
               </Link>
             </div>
