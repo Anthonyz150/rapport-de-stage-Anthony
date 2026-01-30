@@ -17,10 +17,9 @@ export default function Navbar() {
       <nav className="fixed top-0 z-[100] w-full border-b border-[#0056A4]/10 bg-white/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-5xl items-center justify-between p-4">
           
-          <Link href="/" className="font-bold text-[#0056A4] hover:opacity-80 transition-opacity">
+          <div className="font-bold text-[#0056A4] hover:opacity-80 transition-opacity">
              Anthony DIDIER <span className="hidden sm:inline text-[#0056A4]/50 font-normal ml-2">| Stage 3ème</span>
-          </Link>
-
+          </div>
           {/* LIENS VERSION ORDINATEUR */}
           <div className="hidden md:flex gap-8 text-sm font-bold">
             {[
