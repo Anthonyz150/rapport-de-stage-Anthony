@@ -16,9 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 // 1. On personnalise les métadonnées pour ton projet
-export const metadata: Metadata = {
-  title: "Rapport de Stage | Anthony Didier",
-  description: "Présentation de mon stage de 3ème réalisé chez Avisto Telecom",
+export const metadata = {
+  title: "Rapport de Stage - Anthony DIDIER",
+  description: "Mon stage chez Avisto Telecom",
+  icons: {
+    icon: '/favicon.ico', // Le fichier doit être dans le dossier /public
+  },
 };
 
 export default function RootLayout({
