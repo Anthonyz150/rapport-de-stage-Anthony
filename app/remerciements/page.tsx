@@ -27,8 +27,8 @@ export default function RemerciementsPage() {
             {/* Ajout de text-justify pour un rendu impeccable */}
             <div className="space-y-6 text-lg leading-relaxed text-[#0056A4]/90 text-justify">
               <p>
-                Je remercie toute l&apos;équipe d&apos;<strong>Avisto</strong> pour son accueil chaleureux, en
-                particulier mon tuteur de stage, <strong>Richard Tournois</strong>, ainsi que l'ensemble des collaborateurs (<strong>Eric Salenc, Yvann Ponce, Arnaud Dumanois et Logan Lamouar</strong>) qui ont
+                Je souhaiterais remercier toute l&apos;équipe d&apos;<strong>Avisto</strong> pour son accueil chaleureux, en
+                particulier mon tuteur de stage, <strong>Richard TOURNOIS</strong>, ainsi que l'ensemble des collaborateurs, <strong>Eric SALENC, Yvann PONCE, Arnaud DUMANOIS et Logan LAMOUAR</strong>, qui ont
                 pris le temps de me présenter leur métier et de partager leur passion.
               </p>
 
@@ -38,7 +38,7 @@ export default function RemerciementsPage() {
               </p>
 
               <p>
-                Je tiens également à remercier mon établissement scolaire, le <strong>Collège André Malraux</strong>,
+                Je tiens également à remercier mon établissement scolaire, le <strong>Collège André MALRAUX</strong>,
                 ainsi que mes professeurs, pour l&apos;organisation de ce stage d&apos;observation.
               </p>
             </div>
